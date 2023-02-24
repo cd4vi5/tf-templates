@@ -8,8 +8,10 @@ resource "aws_instance" "tf-test-ec2-01" {
 ami = "ami-09ee0944866c73f62"
 instance_type = "t2.micro"
 
-tags {
+tags = {
     Purpose = "Test"
+    Name = "tf-test-ec2-01"
+
 }
 
 }
